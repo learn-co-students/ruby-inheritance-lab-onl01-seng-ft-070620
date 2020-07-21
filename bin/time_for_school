@@ -18,3 +18,20 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+# play with jim
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Jones"
+
+# have avi teach steve
+new_thing = avi.teach # get something random from the KNOWLEDGE array
+steve.learn(new_thing) # teach this young bull that thing
+
+# have avi teach a new student
+connor = Student.new
+connor.first_name = "Connor"
+connor.last_name = "Kadeer"
+connor.learn(new_thing)
+puts "#{steve.knowledge}"
+puts "#{connor.knowledge}"
